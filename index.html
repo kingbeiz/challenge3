@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+    <!----Google-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <!--    Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section id="hero" class="container-hero mobile-hero">
+      <div class="container">
+        <nav>
+          <a class="header" href="index.html">Loopstudios</a>
+          <ul>
+            <li class="desktop-menu"><a href="#">About</a></li>
+            <li class="desktop-menu"><a href="#">Careers</a></li>
+            <li class="desktop-menu"><a href="#">Events</a></li>
+            <li class="desktop-menu"><a href="#">Products</a></li>
+            <li class="desktop-menu"><a href="#">Support</a></li>
+            <span onclick="openNav()">&#9776;</span>
+          </ul>
+        </nav>
+        <nav>
+          <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <div class="overlay-content">
+              <a href="#">About</a>
+              <a href="#">Careers</a>
+              <a href="#">Events</a>
+              <a href="#">Products</a>
+              <a href="#">Support</a>
+            </div>
+          </div>
+        </nav>
+        <div class="head-text">
+          <h1>Immersive experiences that deliver</h1>
+        </div>
+      </div>
+    </section>
+    <section id="section2">
+      <div class="container-img">
+        <div class="section2">
+          <img
+            class="image-mobile"
+            src="images/mobile/image-interactive.jpg"
+            alt="image-interactive"
+          />
+          <img
+            class="image-desktop"
+            src="images/desktop/image-interactive.jpg"
+            alt="image-interactive"
+          />
+          <div class="textsection">
+            <h2 class="textalign">The leader in interactive VR</h2>
+            <p class="text-padding textalign">
+              Founded in 2011, Loopstudios has been producing world-class
+              virtual reality projects for some of the best companies around the
+              globe. Our award-winning creations have transformed businesses
+              through digital experiences that bind to their brand.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section3">
+      <div class="container container-padding">
+        <div class="head-button">
+          <h2 class="rowhead">Our creations</h2>
+          <a type="button" class="button" href="#">See all</a>
+        </div>
+
+        <div class="row">
+          <div class="image-all img1">
+            <p class="row-text">
+              Deep <br />
+              earth
+            </p>
+          </div>
+          <div class="image-all img2">
+            <p class="row-text">
+              Night <br />
+              arcade
+            </p>
+          </div>
+          <div class="image-all img3">
+            <p class="row-text">
+              Soccer<br />
+              team VR
+            </p>
+          </div>
+          <div class="image-all img4">
+            <p class="row-text">
+              The<br />
+              grid
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="image-all img5">
+            <p class="row-text">
+              From up<br />
+              above VR
+            </p>
+          </div>
+          <div class="image-all img6">
+            <p class="row-text">Pocket <br />borealis</p>
+          </div>
+          <div class="image-all img7">
+            <p class="row-text">The <br />curiosity</p>
+          </div>
+          <div class="image-all img8">
+            <p class="row-text">
+              Make it<br />
+              fisheye
+            </p>
+          </div>
+        </div>
+        <a class="button2" href="#">See all</a>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-head">
+        <h1 class="header">Loopstudios</h1>
+        <div class="icons">
+          <i class="fab fa-facebook fa-2x icon"></i>
+          <i class="fab fa-twitter fa-2x icon"></i>
+          <i class="fab fa-pinterest fa-2x icon"></i>
+          <i class="fab fa-instagram fa-2x icon"></i>
+        </div>
+      </div>
+      <div class="footer-foot">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#"> Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+        <i class="fab fa-facebook fa-2x icon-2"></i>
+        <i class="fab fa-twitter fa-2x icon-2"></i>
+        <i class="fab fa-pinterest fa-2x icon-2"></i>
+        <i class="fab fa-instagram fa-2x icon-2"></i>
+
+        <p>© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+  </body>
+</html>
